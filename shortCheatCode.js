@@ -1,4 +1,4 @@
-//code tự chọn cùng đáp án lần đầu (dùng hay k cũng được)
+//code tự chọn cùng đáp án lần đầu (optional)
 var buttons = document.querySelectorAll('input[type="radio"]');
 for(i=0;i<buttons.length;i++){
     buttons[i].click();
