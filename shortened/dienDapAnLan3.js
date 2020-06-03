@@ -11,8 +11,8 @@ for(i=0;i<cauHoi.length;i++){
 					buttons[i3].click();
 					buttons[i3].parentNode.parentNode.parentNode.lastElementChild.style.color="red";
 					cauHoi[i].id = "right";
-					for(i3=i*4; i3<i*4+4; i3++){
-						buttons[i3].className  = "right";
+					for(i4=i*4; i4<i*4+4; i4++){
+						buttons[i4].className  = "right";
 					}
 				}
 			}
