@@ -70,18 +70,7 @@ for(i=0;i<cauHoi.length;i++){
 for(i=0;i<buttons.length;i++){
     if(buttons[i].className == "" ){
         buttons[i].click();
+	buttons[i].parentNode.parentNode.parentNode.lastElementChild.style.color="red"
     }
 }
-$.ajax({
-         type: "POST",
-         url: "/home/saveusertestresult",
-         cache: "false",
-         data: {
-                ExamId: parseInt(prompt("Nhập số")),
-                AnswerPerQuestions: ConvertLocalStoreDataToServerType(testResultLocalObject),
-                SubmitType: 2,
-                },
-         success: function (data) {         
-                 window.location.href = url + data.Result;
-		}
-	})
+
