@@ -1,5 +1,5 @@
 //dien dap an lan 4
-cauHoi = document.getElementsByClassName("col-11 question-box-title");
+cauHoi = document.getElementsByClassName("col-md-11 col-10 question-box-title");
 ans = JSON.parse(localStorage.getItem("ans"));
 var buttons = document.querySelectorAll('input[type="radio"]');
 for(i=0;i<cauHoi.length;i++){
@@ -70,7 +70,6 @@ for(i=0;i<cauHoi.length;i++){
 for(i=0;i<buttons.length;i++){
     if(buttons[i].className == "" ){
         buttons[i].click();
-	buttons[i].parentNode.parentNode.parentNode.lastElementChild.style.color="red"
+	buttons[i].parentNode.parentNode.parentNode.lastElementChild.style.color="red";
     }
 }
-
