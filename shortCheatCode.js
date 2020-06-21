@@ -69,3 +69,11 @@ xhttp.onreadystatechange = function() {
   }
 xhttp.open("GET", "https://raw.githubusercontent.com/Wohoo22/Nothing/master/shortened/dienDapAnLan4.js", true);
 xhttp.send();
+
+
+//doi mau dap an da chon
+for(i=0; i<buttons.length; i++){
+    if(buttons[i].checked){
+        buttons[i].parentNode.parentNode.parentNode.lastElementChild.style.color="red";
+    }
+}
