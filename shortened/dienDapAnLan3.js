@@ -1,5 +1,5 @@
 //dien dap an lan 3
-cauHoi = document.getElementsByClassName("col-11 question-box-title");
+cauHoi = document.getElementsByClassName("col-md-11 col-10 question-box-title");
 ans = JSON.parse(localStorage.getItem("ans"));
 var buttons = document.querySelectorAll('input[type="radio"]');
 for(i=0;i<cauHoi.length;i++){
@@ -66,6 +66,6 @@ $.ajax({
                 SubmitType: 2,
                 },
          success: function (data) {         
-                 window.location.href = url + data.Result;
+               
 		}
 	})
