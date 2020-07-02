@@ -1,0 +1,101 @@
+var ans = [];
+ans = [
+    "Từnăm1945đếnđầunhữngnăm1970,chínhsáchđốingoạinhấtquáncủachínhquyềnMỹlà",
+    "đànápphongtràogiảiphóngdântộctrênthếgiới",
+    "TạisaonóiLiênminhchâuÂulàtổchứcchínhtrị,kinhtếlớnnhấtthếgiớihiệnnay?",
+    "Làtổchứcliênkếtkinhtế-chínhtrịvàohànglớnnhấthànhtinh,chiếm1/4GDPcủathếgiới,cótrìnhđộkhoahọc-kỹthuậttiêntiến.",
+    "VaitròcủaLiênhợpquốctrướcnhữngbiếnđộngcủatìnhhìnhthếgiớihiệnnaylà",
+    "Liênhợpquốcthựcsựđãtrởthànhmộtdiễnđànvừahợptácvừađấutranhnhằmduytrìhoàbìnhvàanninhthếgiới.",
+    "TínhchấtcủaChiếntranhthếgiớithứnhất(1914-1918)làgì?",
+    "Chiếntranhđếquốcxâmlượcphinghĩa.",
+    "Hãysắpxếpcácdữkiệnsautheotrìnhtựthờigian:1.NhiềunướcĐôngBắcÁđạtđượcsựtăngtrưởngnhanhchóngvềkinhtế;2.HainhànướcrađờitrênbánđảoTriềuTiên;3.HồngKôngvàMaCaotrởvềTrungQuốc;4.NướcCộnghoàNhândânTrungHoathànhlập.",
+    "2,4,1,3.",
+    "Sauthấtbạicủakếhoạch“đánhnhanh,thắngnhanh”trongnhữngnăm1858-1859khitiếnhànhxâmlượcViệtNam,thựcdânPhápbuộcphảichuyểnsang",
+    "kếhoạch“chinhphụctừnggóinhỏ”.",
+    "PhongtràođấutranhchínhtrịcủatầnglớpnàodiễnrarầmrộkhắpSàiGòn,Huế,ĐàNẵngtrongthờikỳchốngchiếnlược“ViệtNamhoáchiếntranh”củađếquốcMỹởmiềnNam?",
+    "Họcsinh,sinhviên.",
+    "Tronglĩnhvựcđốingoại,đếnnăm2000,thànhtựucủacôngcuộcđổimớiđạtđượclà",
+    "cóquanhệthươngmạivàquanhệđầutưvớinhiềunước,thuhútđượcvốnđầutưtừnướcngoài.",
+    "ÝnghĩaquantrọngnhấtcủasựkiệnLiênXôchếtạothànhcôngbomnguyêntửlà",
+    "phávỡthếđộcquyềnvũkhínguyêntửcủaMỹ.",
+    "ThờiđiểmnàođượcĐảngtaxácđịnhlà“thờicơngànnămcómột”đểthựchiệncuộcTổngkhởinghĩagiànhchínhquyền?",
+    "KhiphátxítNhậtđầuhàngĐồngminh,quânNhậtởĐôngDươngrệurã,chínhphủtaysaihoangmanglosợ.",
+    "ViệckýkếtHiệpđịnhSơbộ(ngày6-3-1946)đãcótácdụngrasao?",
+    "Tránhcùngmộtlúcphảiđốiphóvớinhiềukẻthù,đuổiquânTrungHoaDânquốcvềnước,cóthêmthờigianhoàbìnhđểchuẩnbịlựclượng.",
+    "Nhữngnăm70,80củathếkỷXIX,cácnướcthựcdânphươngTâyđuanhauxâuxéchâuPhivìlýdonào?",
+    "KênhđàoXuyêhoànthành.",
+    "NhữngquyếtđịnhcủaHộinghịIantavànhữngthoảthuậncủabacườngquốctạiHộinghịPốtxđam(Đức)đãdẫntớihệquảgì?",
+    "Hìnhthànhkhuônkhổcủamộttrậttựthếgiớimới-TrậttựhaicựcIanta.",
+    "TổchứccáchmạngnàođượccoilàtiềnthâncủaĐảngCộngsảnViệtNam?",
+    "HộiViệtNamCáchmạngThanhniên.",
+    "ĐặcđiểmnổibậtvềchínhsáchđốingoạicủaMĩquacácđờiTổngthốngtừnăm1945đếnnăm2000?",
+    "Hìnhthứcthựchiệnkhácnhau,nhưngcócùngthamvọngmuốnlàmbáchủthếgiới.",
+    "SựkiệnnàođánhdấubướcngoặttrongcuộcđờihoạtđộngcủaNguyễnÁiQuốc?",
+    "ĐọcSơthảolầnthứnhấtnhữngluậncươngvềvấnđềdântộcvàvấnđềthuộcđịacủaLênin(tháng7-1920).",
+    "NhiệmvụhàngđầumàĐảngtaxácđịnhđểgiữvữngthànhquảcáchmạngtrongnhữngnăm1945-1946làgì?",
+    "Củngcố,bảovệchínhquyềncáchmạng,rasứcxâydựngchếđộmới.",
+    "SựkhácbiệttrongchínhsáchđốingoạicủaTâyÂunhữngnăm1950-1973sovớinhữngnămđầusauChiếntranhthếgiớithứhailà",
+    "mộtsốnướcvẫntiếptụcliênminhchặtchẽvớiMỹ,nhiềunướccốgắngđadạnghoá,đaphươnghoátrongquanhệvớibênngoài.",
+    "VănkiệnđượccoilàCươnglĩnhchínhtrịđầutiêncủaĐảngCộngsảnViệtNamlà",
+    "Chínhcươngvắntắt,SáchlượcvắntắtcủaĐảng.",
+    "ĐiểmmấuchốtcủakếhoạchNavalàgì?",
+    "Tậptrungbinhlực,mởtrậnquyếtchiếnchiếnlược,giànhthắnglợiđểkếtthúcchiếntranh.",
+    "HướngtiếncôngchủyếucủaquântatrongcuộcTiếncôngchiếnlượcnăm1972đểpháttriểnrarộngkhắpchiếntrườngmiềnNamlà",
+    "QuảngTrị.",
+    "ChínhsáchưutiênhàngđầucủacácnướcTâyÂuvềđốingoạisauChiếntranhthếgiớithứhailà",
+    "liênminhchặtchẽvớiMĩ.",
+    "NguyênnhânkháchquanđãgiúpkinhtếcácnướcTâyÂusauChiếntranhthếgiớithứhaiphụchồilà",
+    "việntrợcủaMỹtrongkếhoạchMácsan.",
+    "ĐặcđiểmnổibậtcủaphongtràokhángchiếnchốngthựcdânPhápxâmlượccủanhândânNamKỳsaunăm1862là",
+    "quytụthànhnhữngtrungtâmkhángchiếnlớn,tổchứcchặtchẽ.",
+    "ÂmmưucủaTổngthốngNíchxơnkhithựchiệncuộcChiếntranhpháhoạimiềnBắclầnthứhailàgì?",
+    "Cứunguychochiếnlược“ViệtNamhoáchiếntranh”vàtạothếmạnhtrênbànđàmphánởPari,buộctaphảikýHiệpđịnhPari.",
+    "Hãylựachọnphươngánthíchhợpđểhoànthiệnđoạndữliệusau:“PhươnghướngcơbảncủacáchmạngmiềnNamlàkhởinghĩagiànhchínhquyềnvềtaynhândânbằng…”.",
+    "conđườngđấutranhchínhtrịlàchủyếu,kếthợpvớiđấutranhvũtrangđánhđổáchthốngtrịcủaMỹ-Diệm.",
+    "HoàncảnhnàokhiếnTrungươngĐảng,BộChínhtrịquyếtđịnhmởcuộcTiếncôngchiếnlượcnăm1972?",
+    "Tagiànhthắnglợitrêncácmặttrậnquânsự,chínhtrị,ngoạigiaotrongbanăm1969,1970,1971.",
+    "ĐạihộiđạibiểulầnthứIIcủaĐảng(tháng2-1951)cóýnghĩalịchsửnhưthếnào?",
+    "ĐánhdấubướcpháttriểnmớitrongquátrìnhlãnhđạovàtrưởngthànhcủaĐảngta,thúcđẩykhángchiếntiếnlên.",
+    "NhậtBảnđãthựchiệnbiệnphápnàođểpháttriểnkinhtếsauChiếntranhthếgiớithứhai?",
+    "Thựchiện3cuộccảicáchlớn.",
+    "SauChiếntranhlạnhkếtthúcvàtrậttựhaicựcIantatanrã,mụctiêutrongchínhsáchđốingoạicủaMỹlà",
+    "tìmcáchvươnlênchiphối,lãnhđạothếgiới,muốnthiếtlậptrậttựthếgiớiđơncực.",
+    "Đườnglốithểhiệnsựlãnhđạosángsuốt,độcđáocủaĐảngngaysaukhikýHiệpđịnhGiơnevơlà",
+    "tiếnhànhđồngthờicáchmạngdântộcdânchủnhândânởmiềnNamvàcáchmạngXHCNởmiềnBắc.",
+    "VìsaoĐảngvàChínhphủViệtNamDânchủCộnghoàchủtrươnghoàhoãnvớiquânTrungHoaDânquốcởmiềnBắc?",
+    "Tránhcùngmộtlúcphảiđốiphóvớinhiềukẻthù,tậptrunglựclượngđánhPhápởmiềnNam.",
+    "Đầunăm1929,ChibộCộngsảnđầutiênđượcthànhlậptạisốnhà5DphốHàmLong(HàNội)làdo",
+    "BắcKỳlànơiphongtràodântộcdânchủtheokhuynhhướngvôsảnpháttriểnmạnh;hộiviênởBắcKỳnhạybénvềchínhtrị.",
+    "“Tronghơn2năm,miềnBắcđãtịchthu,trưngthu,trưngmuakhoảng81vạnhéctaruộngđất,10vạntrâubòvà1,8triệunôngcụtừtaygiaicấpđịachủ”.Đólàkếtquảcủaviệcthựchiệnnhiệmvụnào?",
+    "Cảicáchruộngđất.",
+    "SauChiếntranhthếgiớithứhai,Mỹthựchiệnchínhsáchđốingoạinhưthếnào?",
+    "Triểnkhaichiếnlượctoàncầuvớithamvọngbáchủthếgiới.",
+    "Hệquảquantrọngvàlớnnhấtcủacuộccáchmạngkhoahọc-kỹthuậthiệnđạilà",
+    "xuấthiệnxuthếtoàncầuhoá.",
+    "VìsaođếquốcMỹbuộcphảituyênbố“Mỹhoá”trởlạicuộcchiếntranhxâmlượcvàthừanhậnsựthấtbạicủa“ViệtNamhoáchiếntranh”?",
+    "Dođòntấncôngbấtngờ,choángvángcủatatrongcuộcTiếncôngchiếnlượcnăm1972(mởđầuvàongày30-3-1972).",
+    "HộinghịnàođánhdấusựchuyểnhướngquantrọngcủaĐảng-đặtnhiệmvụgiảiphóngdântộclênhàngđầu?",
+    "HộinghịBanChấphànhTrungươngĐảngCộngsảnĐôngDươngtháng11-1939.",
+    "ThờigianđầusaukhiHiệpđịnhGiơnevơnăm1954đượckýkết,nhândânmiềnNamđãsửdụngbiệnphápnàođểđấutranhchốngMỹ-Diệm?",
+    "Đấutranhchínhtrị,hoàbình.",
+    "NộidungnàokhôngphảnánhđúngýnghĩathắnglợicủacuộcTổngtuyểncửbầuQuốchộiđầutiênnăm1946?",
+    "LàsựchuẩnbịtrựctiếpchothắnglợicủacuộckhángchiếnchốngthựcdânPhápxâmlược."
+];
+cauHoi = document.getElementsByClassName("col-md-11 col-10 question-box-title");
+var buttons = document.querySelectorAll('input[type="radio"]');
+pickCount=0;
+for(i=0;i<cauHoi.length;i++){
+	for(i2=0; i2<ans.length; i2++){
+		if(cauHoi[i].innerText.replace(/(\n| |\$|\t)/gm, "").trim() == ans[i2]){
+			for(i3=i*4; i3<i*4+4; i3++){
+				if(buttons[i3].parentNode.parentNode.parentNode.lastElementChild.innerText.replace(/(\n| |\$|\t)/gm, "").trim() == ans[i2+1]){
+					buttons[i3].click();
+					buttons[i3].parentNode.parentNode.parentNode.lastElementChild.style.color="red";
+					pickCount++;
+				}
+			}
+		}
+	}
+}
+alert("Ấn OK để chọn "+pickCount+"/"+cauHoi.length+" câu ("
+      +10/cauHoi.length+" điểm 1 câu), các câu đúng sẽ chuyển thành màu đỏ, bạn có thể chọn lại để điểm thấp hơn.");
