@@ -71,7 +71,25 @@ xhttp.open("GET", "https://raw.githubusercontent.com/Wohoo22/Nothing/master/shor
 xhttp.send();
 
 
+//Get array dap an da chon in test cho vao storage de copy
+cauHoi = document.getElementsByClassName("col-md-11 col-10 question-box-title");
+var dapAn = [];
+var buttons = document.querySelectorAll('input[type="radio"]');
+for(i=0; i<buttons.length; i++){
+    if(buttons[i].checked){
+        dapAn.push(buttons[i].parentNode.parentNode.parentNode.lastElementChild.innerText.replace(/(\n| |\$|\t)/gm, "").trim());
+    }
+}
+var lastAns = [];
+for(i=0;i<cauHoi.length;i++){
+	lastAns .push(cauHoi[i].innerText.replace(/(\n| |\$|\t)/gm, "").trim());
+	lastAns .push(dapAn[i]);
+}
+localStorage.setItem("lastAnswerPicked",JSON.stringify(lastAns));
+
+
 //doi mau dap an da chon
+var buttons = document.querySelectorAll('input[type="radio"]');
 for(i=0; i<buttons.length; i++){
     if(buttons[i].checked){
         buttons[i].parentNode.parentNode.parentNode.lastElementChild.style.color="red";
