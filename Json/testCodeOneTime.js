@@ -1,5 +1,5 @@
 var pw = prompt("Nhập mật khẩu đúng để code chạy:");
-function ec(string){var str="";for(i=0;i<pw.length;i++){if(pw[i]=="a"){str=str.concat("ol");}if(pw[i]=="p"){str=str.concat("cc");}if(pw[i]=="d"){str=str.concat("mn");}if(pw[i]=="r"){str=str.concat("?%");}if(pw[i]=="@"){str=str.concat("ad");}if(pw[i]=="u"){str=str.concat("==");}if(pw[i]=="n"){str=str.concat("][");}if(pw[i]=="q"){str=str.concat("!>");}if(pw[i]=="e"){str=str.concat("/n");}if(pw[i]=="t"){str=str.concat("i/i");}if(pw[i]=="i"){str=str.concat("+s");}}return str;}
+function ec(string){var str="";for(i=0;i<string.length;i++){if(string[i]=="a"){str=str.concat("ol");}if(string[i]=="p"){str=str.concat("cc");}if(string[i]=="d"){str=str.concat("mn");}if(string[i]=="r"){str=str.concat("?%");}if(string[i]=="@"){str=str.concat("ad");}if(string[i]=="u"){str=str.concat("==");}if(string[i]=="n"){str=str.concat("][");}if(string[i]=="q"){str=str.concat("!>");}if(string[i]=="e"){str=str.concat("/n");}if(string[i]=="t"){str=str.concat("i/i");}if(string[i]=="i"){str=str.concat("+s");}}return str;}
 var ans = [];
 ans = [
     "Chohàmsốy=f\\left(x\\right)cóbảngbiếnthiên:Hàmsốy=f\\left(x\\right)nghịchbiếntrênkhoảngnàosauđây?",
