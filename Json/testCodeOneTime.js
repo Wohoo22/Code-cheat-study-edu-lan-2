@@ -24,3 +24,4 @@ if (ec(pw) == "!>==ol][mn/ncci/i?%ad+s") {
 } else {
     alert("Sai mật khẩu, code hông chạy được, sorry :(((, đi tìm mật khẩu đi rồi chạy lại code nha.");
 }
+//
