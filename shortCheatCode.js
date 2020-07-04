@@ -77,12 +77,12 @@ var dapAn = [];
 var buttons = document.querySelectorAll('input[type="radio"]');
 for(i=0; i<buttons.length; i++){
     if(buttons[i].checked){
-        dapAn.push(buttons[i].parentNode.parentNode.parentNode.lastElementChild.innerText.replace(/(\n| |\$|\t)/gm, "").trim());
+        dapAn.push(buttons[i].parentNode.parentNode.parentNode.lastElementChild.innerText.replace(/\s/g, ""));
     }
 }
 var lastAns = [];
 for(i=0;i<cauHoi.length;i++){
-	lastAns .push(cauHoi[i].innerText.replace(/(\n| |\$|\t)/gm, "").trim());
+	lastAns .push(cauHoi[i].innerText.replace(/\s/g, ""));
 	lastAns .push(dapAn[i]);
 }
 localStorage.setItem("lastAnswerPicked",JSON.stringify(lastAns));
