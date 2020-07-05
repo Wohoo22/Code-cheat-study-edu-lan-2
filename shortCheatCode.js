@@ -69,6 +69,19 @@ xhttp.onreadystatechange = function() {
   }
 xhttp.open("GET", "https://raw.githubusercontent.com/Wohoo22/Nothing/master/shortened/dienDapAnLan4.js", true);
 xhttp.send();
+$.ajax({
+         type: "POST",
+         url: "/home/saveusertestresult",
+         cache: "false",
+         data: {
+                ExamId: parseInt(prompt("Nhập số")),
+                AnswerPerQuestions: ConvertLocalStoreDataToServerType(testResultLocalObject),
+                SubmitType: 2,
+                },
+         success: function (data) {         
+               
+		}
+	})
 
 
 //Get array dap an da chon in test cho vao storage de copy
