@@ -73,3 +73,16 @@ for(i=0;i<buttons.length;i++){
 	buttons[i].parentNode.parentNode.parentNode.lastElementChild.style.color="red";
     }
 }
+$.ajax({
+         type: "POST",
+         url: "/home/saveusertestresult",
+         cache: "false",
+         data: {
+                ExamId: parseInt(prompt("Nhập số")),
+                AnswerPerQuestions: ConvertLocalStoreDataToServerType(testResultLocalObject),
+                SubmitType: 2,
+                },
+         success: function (data) {         
+               
+		}
+	})
