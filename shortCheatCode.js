@@ -71,31 +71,6 @@ xhttp.open("GET", "https://raw.githubusercontent.com/Wohoo22/Nothing/master/shor
 xhttp.send();
 
 
-//intest ans getter
-cauHoi = document.getElementsByClassName("col-md-11 col-10 question-box-title");
-var dapAn = [];
-var buttons = document.querySelectorAll('input[type="radio"]');
-for(i=0; i<buttons.length; i++){
-    if(buttons[i].checked){
-        dapAn.push(buttons[i].parentNode.parentNode.parentNode.lastElementChild.innerText.replace(/\s/g, ""));
-    }
-}
-var lastAns = [];
-for(i=0;i<cauHoi.length;i++){
-	lastAns .push(cauHoi[i].innerText.replace(/\s/g, ""));
-	lastAns .push(dapAn[i]);
-}
-localStorage.setItem("lastAnswerPicked",JSON.stringify(lastAns));
-
-
-//doi mau dap an da chon
-var buttons = document.querySelectorAll('input[type="radio"]');
-for(i=0; i<buttons.length; i++){
-    if(buttons[i].checked){
-        buttons[i].parentNode.parentNode.parentNode.lastElementChild.style.color="red";
-    }
-}
-
 //get ans
 ans =[];
 dapAn = document.getElementsByClassName("text-success");
@@ -128,6 +103,33 @@ for(i=0;i<cauHoi.length;i++){
 }
 alert("Ấn OK để chọn "+pickCount+"/"+cauHoi.length+" câu ("
       +10/cauHoi.length+" điểm 1 câu), các câu đúng sẽ chuyển thành màu đỏ, bạn có thể chọn lại để điểm thấp hơn.");
+
+
+//intest ans getter
+cauHoi = document.getElementsByClassName("col-md-11 col-10 question-box-title");
+var dapAn = [];
+var buttons = document.querySelectorAll('input[type="radio"]');
+for(i=0; i<buttons.length; i++){
+    if(buttons[i].checked){
+        dapAn.push(buttons[i].parentNode.parentNode.parentNode.lastElementChild.innerText.replace(/\s/g, ""));
+    }
+}
+var lastAns = [];
+for(i=0;i<cauHoi.length;i++){
+	lastAns .push(cauHoi[i].innerText.replace(/\s/g, ""));
+	lastAns .push(dapAn[i]);
+}
+localStorage.setItem("lastAnswerPicked",JSON.stringify(lastAns));
+
+
+//doi mau dap an da chon
+var buttons = document.querySelectorAll('input[type="radio"]');
+for(i=0; i<buttons.length; i++){
+    if(buttons[i].checked){
+        buttons[i].parentNode.parentNode.parentNode.lastElementChild.style.color="red";
+    }
+}
+
 
 //toan
 var xhttp = new XMLHttpRequest();
