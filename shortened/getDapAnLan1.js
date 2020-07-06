@@ -1,4 +1,3 @@
-function copyStringToClipboard (str) {var el = document.createElement('textarea');el.value = str;el.setAttribute('readonly', '');el.style = {position: 'absolute', left: '-9999px'};document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);}
 //get dap an lan 1
 ans =[];
 dapAn = document.getElementsByClassName("text-success");
@@ -19,6 +18,7 @@ for(i=3;i<dapAnSai.length;i+=3){
 }
 localStorage.setItem("wrongAns",JSON.stringify(wrongAns));
 //code tự nhập đáp án đúng và loại trừ các đáp án sai (lần làm bài 2)
+function copyStringToClipboard (str) {var el = document.createElement('textarea');el.value = str;el.setAttribute('readonly', '');el.style = {position: 'absolute', left: '-9999px'};document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);}
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {      
