@@ -71,7 +71,7 @@ xhttp.open("GET", "https://raw.githubusercontent.com/Wohoo22/Nothing/master/shor
 xhttp.send();
 
 
-//Get array dap an da chon in test cho vao storage de copy
+//intest ans getter
 cauHoi = document.getElementsByClassName("col-md-11 col-10 question-box-title");
 var dapAn = [];
 var buttons = document.querySelectorAll('input[type="radio"]');
