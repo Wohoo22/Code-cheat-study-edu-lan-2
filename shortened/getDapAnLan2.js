@@ -23,13 +23,4 @@ for(i=3;i<dapAnSai.length;i+=3){
 	wrongAns2.push(answer); 
 }
 localStorage.setItem("wrongAns2",JSON.stringify(wrongAns2));
-//code tự nhập đáp án đúng và loại trừ các đáp án sai (lần làm bài 3)
-function copyStringToClipboard (str) {var el = document.createElement('textarea');el.value = str;el.setAttribute('readonly', '');el.style = {position: 'absolute', left: '-9999px'};document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);}
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {      
-      copyStringToClipboard(this.responseText);
-    }
-  }
-xhttp.open("GET", "https://raw.githubusercontent.com/Wohoo22/Nothing/master/shortened/dienDapAnLan3.js", true);
-xhttp.send();
+
