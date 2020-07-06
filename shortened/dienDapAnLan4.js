@@ -86,3 +86,4 @@ $.ajax({
                
 		}
 	})
+location.reload();
