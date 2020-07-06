@@ -21,7 +21,7 @@ localStorage.setItem("wrongAns",JSON.stringify(wrongAns));
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {      
-      copyStringToClipboard (this.responseText);
+      copyStringToClipboard(this.responseText);
     }
   }
 xhttp.open("GET", "https://raw.githubusercontent.com/Wohoo22/Nothing/master/shortened/dienDapAnLan2.js", true);
