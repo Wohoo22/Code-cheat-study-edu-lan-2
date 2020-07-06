@@ -23,3 +23,12 @@ for(i=3;i<dapAnSai.length;i+=3){
 	wrongAns3.push(answer); 
 }
 localStorage.setItem("wrongAns3",JSON.stringify(wrongAns3));
+//code tự nhập đáp án đúng và loại trừ các đáp án sai (lần làm bài 4)
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {      
+      copyStringToClipboard(this.responseText);
+    }
+  }
+xhttp.open("GET", "https://raw.githubusercontent.com/Wohoo22/Nothing/master/shortened/dienDapAnLan4.js", true);
+xhttp.send();
