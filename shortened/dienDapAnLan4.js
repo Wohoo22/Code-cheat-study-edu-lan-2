@@ -83,7 +83,7 @@ $.ajax({
                 SubmitType: 2,
                 },
          success: function (data) {         
-               
+               location.reload();
 		}
 	})
-location.reload();
+
