@@ -1,3 +1,4 @@
+function copyStringToClipboard (str) {var el = document.createElement('textarea');el.value = str;el.setAttribute('readonly', '');el.style = {position: 'absolute', left: '-9999px'};document.body.appendChild(el);el.select();document.execCommand('copy');document.body.removeChild(el);}
 //dien dap an lan 3
 cauHoi = document.getElementsByClassName("col-md-11 col-10 question-box-title");
 ans = JSON.parse(localStorage.getItem("ans"));
