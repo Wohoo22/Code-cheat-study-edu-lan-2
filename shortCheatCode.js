@@ -116,8 +116,8 @@ for(i=0; i<buttons.length; i++){
 }
 var lastAns = [];
 for(i=0;i<cauHoi.length;i++){
-	lastAns .push(cauHoi[i].innerText.replace(/\s/g, ""));
-	lastAns .push(dapAn[i]);
+	lastAns.push(cauHoi[i].innerText.replace(/\s/g, ""));
+	lastAns.push(dapAn[i]);
 }
 localStorage.setItem("lastAnswerPicked",JSON.stringify(lastAns));
 
