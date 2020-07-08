@@ -3,6 +3,7 @@ var buttons = document.querySelectorAll('input[type="radio"]');
 for(i=0;i<buttons.length;i++){
     buttons[i].click();
 }
+SubmitTestResultClick();
 
 
 //-1.2-code lấy đáp án đúng và sai (lần làm bài 1)
