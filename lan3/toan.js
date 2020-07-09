@@ -20,7 +20,7 @@ if (ec(pw) == atob("IT49PW9sXVttbi9uY2NpL2k/JWFkK3M=")) {
         }
     }
     alert("Ấn OK để chọn " + pickCount + "/" + cauHoi.length + " câu (" +
-        10 / cauHoi.length + " điểm 1 câu), " + (cauHoi.length - pickCount) + " câu bị lỗi, các câu đúng đã được chọn, bạn có thể chọn lại để điểm thấp hơn. Auto code written by Quan with luv. :))");
+        10 / cauHoi.length + " điểm 1 câu), " + (cauHoi.length - pickCount) + " câu bị lỗi, các câu đúng đã được chọn, bạn có thể chọn lại để điểm thấp hơn. Autobot made by Quan with luv. :))");
 } else {
     alert("Sai mật khẩu, code hông chạy được, sorry :(((, đi tìm mật khẩu đi rồi chạy lại code nha.");
 }
