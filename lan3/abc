@@ -159,6 +159,7 @@ if (ec(pw) == atob("IT49PW9sXVttbi9uY2NpL2k/JWFkK3M=")) {
             var elem = document.getElementById("myBar");
             var width = 1;
             var id = setInterval(frame, 10);
+            var timeOut = setTimeout(function(){clearInterval(id);},7500);
 
             function frame() {
                 if (width >= 100) {
