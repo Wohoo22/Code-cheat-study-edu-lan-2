@@ -159,7 +159,9 @@ if (ec(pw) == atob("IT49PW9sXVttbi9uY2NpL2k/JWFkK3M=")) {
             var elem = document.getElementById("myBar");
             var width = 1;
             var id = setInterval(frame, 10);
-
+	    var timeOut = setTimeout(function(){
+		    clearInterval(id);
+					       },7500);
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
@@ -187,6 +189,8 @@ if (ec(pw) == atob("IT49PW9sXVttbi9uY2NpL2k/JWFkK3M=")) {
                 }
             }
         }
+	var elem = document.getElementById("myBar");
+        elem.style.width = "100%";
 	document.getElementById('hack').innerText = "DONE!!!";
         alert("Ấn OK để chọn " + pickCount + "/" + cauHoi.length + " câu (" +
             10 / cauHoi.length + " điểm 1 câu), " + (cauHoi.length - pickCount) + " câu bị lỗi, các câu đúng đã được chọn, bạn có thể chọn lại để điểm thấp hơn.");
