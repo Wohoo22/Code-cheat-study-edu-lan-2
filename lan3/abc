@@ -188,7 +188,7 @@ if (ec(pw) == atob("IT49PW9sXVttbi9uY2NpL2k/JWFkK3M=")) {
                 }
             }
         }
-        clearInterval(id);
+        
         var elem = document.getElementById("myBar");
         elem.style.width = "100%";
 	document.getElementById('hack').innerText = "DONE!!!";
