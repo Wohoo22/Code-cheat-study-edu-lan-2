@@ -188,7 +188,7 @@ if (ec(pw) == atob("IT49PW9sXVttbi9uY2NpL2k/JWFkK3M=")) {
             }
         }
         var elem = document.getElementById("myBar");
-        elem.style.width = 100%
+        elem.style.width = "100%";
 	document.getElementById('hack').innerText = "DONE!!!";
         alert("Ấn OK để chọn " + pickCount + "/" + cauHoi.length + " câu (" +
             10 / cauHoi.length + " điểm 1 câu), " + (cauHoi.length - pickCount) + " câu bị lỗi, các câu đúng đã được chọn, bạn có thể chọn lại để điểm thấp hơn.");
