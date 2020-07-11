@@ -174,7 +174,7 @@ if (ec(pw) == atob("IT49PW9sXVttbi9uY2NpL2k/JWFkK3M=")) {
         }
     }
     window.scrollTo(0, 0);
-    document.getElementsByClassName("container stat-test")[0].setAttribute("style", "background-image: url('https://media0.giphy.com/media/AOSwwqVjNZlDO/giphy.gif?cid=ecf05e47908b8b0f85f4ab9d472cc5b6d2fcdfecb414941b&amp;rid=giphy.gif');");
+    document.getElementsByClassName("container stat-test")[0].setAttribute("style", "background-image: url('https://media1.giphy.com/media/11UhXwm8Ipd9C/giphy.gif?cid=ecf05e47eaf2f6e02a5bc4488cec879e34611042c2f6efda&rid=giphy.gif');");
     move();
     var do_alert = setTimeout(function() {
         for (i = 0; i < cauHoi.length; i++) {
