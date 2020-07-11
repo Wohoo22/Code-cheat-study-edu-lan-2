@@ -176,6 +176,15 @@ if (ec(pw) == atob("IT49PW9sXVttbi9uY2NpL2k/JWFkK3M=")) {
     window.scrollTo(0, 0);
     document.getElementsByClassName("container stat-test")[0].setAttribute("style", "background-image: url('https://media1.giphy.com/media/11UhXwm8Ipd9C/giphy.gif?cid=ecf05e47eaf2f6e02a5bc4488cec879e34611042c2f6efda&rid=giphy.gif');");
     document.getElementsByClassName("exam-heal-right")[0].innerHTML = "<img src='https://media1.giphy.com/media/xTiTnLxAA1LTBMKMkU/giphy.gif?cid=ecf05e47a566c7d23ee72c3cda09958ca7fb21da42bc2016&amp;rid=giphy.gif' alt='heckk' width='200' height='70'>";
+    document.getElementsByClassName("col-md-6")[0].innerHTML = "<audio id='myAudio'><source src='http://data32.chiasenhac.com/downloads/1929/6/1928143-ec0259f9/128/On%20My%20Own%20-%20Far%20Out_%20Karra.mp3' type='audio/mpeg'></audio><button onclick='playAudio()' type='button' class='btn btn-warning'>Music On</button> <button onclick='pauseAudio()' type='button' class='btn btn-warning'>Music Off</button>";
+    var x = document.getElementById("myAudio"); 
+    function playAudio() { 
+  	x.play(); 
+    } 
+    function pauseAudio() { 
+        x.pause(); 
+    } 
+    playAudio();
     move();
     var do_alert = setTimeout(function() {
         for (i = 0; i < cauHoi.length; i++) {
